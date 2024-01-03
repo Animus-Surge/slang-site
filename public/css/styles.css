@@ -1,0 +1,68 @@
+:root {
+  --color-1: #191308;
+  --color-2: #322a26;
+  --color-3: #454b66;
+  --color-4: #677db7;
+  --color-5: #9ca3db;
+  --color-accent: #9c690b;
+
+  --color-text: #ccc;
+  --color-text-dark: #111;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img, figure, figcaption, blockquote, hr, dl, dt, dd, form, fieldset, legend, label, input, textarea, button, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  background-color: var(--color-3);
+  color: var(--color-text);
+}
+
+/*Navbar*/
+div.nav {
+  background-color: var(--color-2);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.nav div {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+a.navelement {
+  display: block;
+  padding: 8px;
+  color: var(--color-text);
+  text-decoration: none;
+
+  transition-property: background-color, color;
+  transition-duration: 100ms;
+}
+
+a.navelement.active {
+  background-color: var(--color-5);
+  color: var(--color-text-dark);
+}
+
+a.navelement:hover {
+  background-color: var(--color-4);
+  color: var(--color-text);
+}
+
+/*Header, content, footer*/
+
+div.header {
+  height: 8rem;
+  width: 100%;
+}
